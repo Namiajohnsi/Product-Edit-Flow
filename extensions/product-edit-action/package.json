@@ -1,0 +1,12 @@
+{
+  "name": "product-edit-action",
+  "private": true,
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@preact/signals": "^2.3.x",
+    "@shopify/ui-extensions": "2025.10.x",
+    "@shopify/ui-extensions-react": "^2025.7.3",
+    "preact": "^10.10.x"
+  }
+}
