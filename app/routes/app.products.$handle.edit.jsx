@@ -507,14 +507,14 @@ export default function ProductEditPage() {
           : null,
       });
     }
-  }, [actionData]);
+  }, [actionData,formState.pricing,formState.inventory]);
 
   const handleTabChange = useCallback((tabIndex) => {
     setSelectedTab(tabIndex);
     if (tabIndex === 1 && !inventoryLoadedRef.current) {
       inventoryFetcher.load(`/app/products/${handle}/edit?tab=inventory`);
     }
-  }, [handle]);
+  }, [handle,inventoryFetcher]);
 
   const setPricingField = (field, value) => {
     setFormState((prev) => ({

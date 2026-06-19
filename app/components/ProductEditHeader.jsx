@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 export default function ProductEditHeader({
   title,
   isDirty,
@@ -92,4 +93,12 @@ const styles = {
     fontSize: 14,
     fontWeight: 600,
   },
+};
+
+ProductEditHeader.propTypes = {
+  title: PropTypes.string.isRequired,
+  isDirty: PropTypes.bool.isRequired,
+  isSaving: PropTypes.bool.isRequired,
+  onSave: PropTypes.func.isRequired,
+  onDiscard: PropTypes.func.isRequired,
 };
