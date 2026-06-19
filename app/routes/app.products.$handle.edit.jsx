@@ -10,7 +10,6 @@ export const loader = async ({ request, params }) => {
     throw new Response("Handle is required to load product", { status: 400 });
     
   }
-
   const url = new URL(request.url);
   const tab = url.searchParams.get("tab") || "pricing";
 
